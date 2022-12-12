@@ -10,7 +10,7 @@
 <ul>
     {% for pizza in pizza_types %}
 
-    <li> 
+    <li style="color:rgb(188, 0, 0)"> 
         <a style="color:rgb(188, 0, 0);font-family:'Garamond';font-size:28px;"href="{% url 'pizzas:pizza' pizza.id %}"> {{ pizza }} </a>
     </li>
 
