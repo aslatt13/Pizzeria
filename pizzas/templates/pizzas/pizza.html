@@ -1,0 +1,27 @@
+{% extends "pizzas/base.html" %}
+
+{% block content %} 
+<div style="background-image:url('https://cdn.pixabay.com/photo/2020/03/21/02/26/pizza-4952508_1280.jpg');
+    padding:5px;width:auto;height:1000px;border:1px solid black;background-repeat:no-repeat;">
+
+
+<p style="color:rgb(188, 0, 0);font-family:'Garamond';font-size:35px;text-align:left;"> {{ pizza }} Pizza</p>
+
+
+<ul>
+    {% for e in entries %}
+
+    <li style="color:rgb(188, 0, 0);font-family:'Garamond';font-size:23px;text-align:left;">{{ e.topping_name }} </li>
+
+    {% empty %} 
+    <li style="color:rgb(188, 0, 0);font-family:'Garamond';font-size:23px;text-align:left;"> No user comments for this pizza have been made.</li>
+    {% endfor %} 
+    
+</ul>
+
+<textarea rows="5" cols="45">
+    Type your comment here...
+</textarea>
+
+</div>
+{% endblock content %} 
