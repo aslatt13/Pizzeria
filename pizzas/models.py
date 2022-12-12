@@ -1,6 +1,4 @@
 from django.db import models
-from django.template.defaultfilters import truncatechars
-from django.utils.safestring import mark_safe
 
 # Create your models here.
 
@@ -15,4 +13,4 @@ class Topping(models.Model):
     topping_name = models.CharField(max_length= 200)
 
     def __str__(self):
-        return f"{self.topping_name[:50]}...."
+        return f"{self.topping_name[:50]}..."
