@@ -5,13 +5,13 @@
     padding:5px;width:auto;height:1000px;border:1px solid black;background-repeat:no-repeat;">
 
 
-<p style="color:rgb(188, 0, 0);font-family:'Garamond';font-size:35px;text-align:left;"> {{ pizza }} Pizza</p>
+<p style="color:rgb(188, 0, 0);font-family:'Garamond';font-size:35px;text-align:left;"> {{ pizza }} Pizza </p>
 
 
 <ul>
     {% for e in entries %}
 
-    <li style="color:rgb(188, 0, 0);font-family:'Garamond';font-size:23px;text-align:left;">{{ e.topping_name }} </li>
+    <li style="color:rgb(188, 0, 0);font-family:'Garamond';font-size:23px;text-align:left;"> {{ e.topping_name }} </li>
 
     {% empty %} 
     <li style="color:rgb(188, 0, 0);font-family:'Garamond';font-size:23px;text-align:left;"> No user comments for this pizza have been made.</li>
